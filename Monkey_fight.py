@@ -214,7 +214,6 @@ class taru(pg.sprite.Sprite):
     """
     敵の攻撃(樽)に関するクラス
     """
-
     gravity = +0.05
 
     def __init__(self, gorilla: "enemy"):
@@ -247,9 +246,6 @@ class taru(pg.sprite.Sprite):
             self.sky_high += __class__.gravity
         else:
             self.vy = 0
-
-        
-
     
         self.rct.move_ip(self.vx, self.vy) # 横移動だけ更新
         screen.blit(self.image, self.rct)
